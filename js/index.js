@@ -49,25 +49,22 @@ middle.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
 //Navbar content
-
 let navElement = document.querySelector('nav')
+
 navElement.children[0].textContent = siteContent["nav"]["nav-item-1"]
-navElement.children[0].style.color = 'green';
 
 navElement.children[1].textContent = siteContent["nav"]["nav-item-2"]
-navElement.children[1].style.color = 'green';
 
 navElement.children[2].textContent = siteContent["nav"]["nav-item-3"]
-navElement.children[2].style.color = 'green';
 
 navElement.children[3].textContent = siteContent["nav"]["nav-item-4"]
-navElement.children[3].style.color = 'green';
 
 navElement.children[4].textContent = siteContent["nav"]["nav-item-5"]
-navElement.children[4].style.color = 'green';
 
 navElement.children[5].textContent = siteContent["nav"]["nav-item-6"]
-navElement.children[5].style.color = 'green';
+
+let navArray = Array.from(navElement.children)
+navArray.forEach(navb => navb.style.color = 'green')
 
 let oldestChild = document.createElement('a')
 oldestChild.setAttribute('href', '#')
