@@ -57,3 +57,11 @@ navBar[3].textContent = siteContent["nav"]["nav-item-4"]
 navBar[4].textContent = siteContent["nav"]["nav-item-5"]
 navBar[5].textContent = siteContent["nav"]["nav-item-6"]
 
+
+//cta content
+let ctaLeft = document.querySelector('h1')
+ctaLeft.textContent = siteContent["cta"]["h1"]
+
+let ctaButton = document.querySelector('button')
+ctaButton.textContent = siteContent["cta"]["button"]
+
