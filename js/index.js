@@ -49,5 +49,11 @@ middle.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
 //Navbar content
-let services = document.getElementById("nav-item-1")
-services.textContent[0]('Services')
+let navBar = document.querySelectorAll("a")
+navBar[0].textContent = siteContent["nav"]["nav-item-1"]
+navBar[1].textContent = siteContent["nav"]["nav-item-2"]
+navBar[2].textContent = siteContent["nav"]["nav-item-3"]
+navBar[3].textContent = siteContent["nav"]["nav-item-4"]
+navBar[4].textContent = siteContent["nav"]["nav-item-5"]
+navBar[5].textContent = siteContent["nav"]["nav-item-6"]
+
