@@ -49,19 +49,65 @@ middle.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
 //Navbar content
-let navBar = document.querySelectorAll("a")
-navBar[0].textContent = siteContent["nav"]["nav-item-1"]
-navBar[1].textContent = siteContent["nav"]["nav-item-2"]
-navBar[2].textContent = siteContent["nav"]["nav-item-3"]
-navBar[3].textContent = siteContent["nav"]["nav-item-4"]
-navBar[4].textContent = siteContent["nav"]["nav-item-5"]
-navBar[5].textContent = siteContent["nav"]["nav-item-6"]
 
+let navElement = document.querySelector('nav')
+navElement.children[0].textContent = siteContent["nav"]["nav-item-1"]
+navElement.children[0].style.color = 'green';
+
+navElement.children[1].textContent = siteContent["nav"]["nav-item-2"]
+navElement.children[1].style.color = 'green';
+
+navElement.children[2].textContent = siteContent["nav"]["nav-item-3"]
+navElement.children[2].style.color = 'green';
+
+navElement.children[3].textContent = siteContent["nav"]["nav-item-4"]
+navElement.children[3].style.color = 'green';
+
+navElement.children[4].textContent = siteContent["nav"]["nav-item-5"]
+navElement.children[4].style.color = 'green';
+
+navElement.children[5].textContent = siteContent["nav"]["nav-item-6"]
+navElement.children[5].style.color = 'green';
+
+let oldestChild = document.createElement('a')
+oldestChild.setAttribute('href', '#')
+oldestChild.textContent = 'Cool Dudes'
+oldestChild.style.color = 'green'
+
+let youngestChild = document.createElement('a')
+youngestChild.setAttribute('href', '#')
+youngestChild.textContent = 'Lame-os'
+youngestChild.style.color = 'green'
+
+navElement.appendChild(oldestChild)
+navElement.prepend(youngestChild)
 
 //cta content
 let ctaLeft = document.querySelector('h1')
 ctaLeft.textContent = siteContent["cta"]["h1"]
 
+
 let ctaButton = document.querySelector('button')
 ctaButton.textContent = siteContent["cta"]["button"]
 
+
+//H4 Headers
+let h4Headers = document.querySelectorAll('h4')
+h4Headers[0].textContent = siteContent["main-content"]["features-h4"]
+h4Headers[1].textContent = siteContent["main-content"]["about-h4"]
+h4Headers[2].textContent = siteContent["main-content"]["services-h4"]
+h4Headers[3].textContent = siteContent["main-content"]["product-h4"]
+h4Headers[4].textContent = siteContent["main-content"]["vision-h4"]
+h4Headers[5].textContent = siteContent["contact"]["contact-h4"]
+
+//p content
+let para = document.querySelectorAll('p')
+para[0].textContent = siteContent["main-content"]["features-content"]
+para[1].textContent = siteContent["main-content"]["about-content"]
+para[2].textContent = siteContent["main-content"]["services-content"]
+para[3].textContent = siteContent["main-content"]["product-content"]
+para[4].textContent = siteContent["main-content"]["vision-content"]
+para[5].textContent = siteContent["contact"]["address"]
+para[6].textContent = siteContent["contact"]["phone"]
+para[7].textContent = siteContent["contact"]["email"]
+para[8].textContent = siteContent["footer"]["copyright"]
